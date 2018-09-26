@@ -1,23 +1,17 @@
-function setup() {
-  createCanvas(480, 120);
-  textSize(64);
-  textALign(center)
-  filll(255);
-
+var x = 60;
+function setup (){
+// put setup code here
+  createCanvas(120,120);
 }
 function draw(){
-background(0);
-if(keyispressed) {
-  text(key, 60, 80)
-}
-function draw(){
-text('A new hope', 20, 20);
-text('it is a period of civil war', 20, 20)
-text('Rebel spaceships, striking', 40, 40)
-text('from a hidden base, have won', 60, 60)
-text('their first victory against the evil', 80, 80)
-text('Galactic empire...', 100, 100)
-
-}
-
+  background(0);
+  fill(255);
+  if(keyIsPressed){
+    if(keyCode == LEFT_ARROW) {
+      x = x - 5;
+    } else if(keyCode == RIGHT_ARROW) {
+      x = x + 5;
+    }
+  }
+  rect(x, 60, 10, 10);
 }
