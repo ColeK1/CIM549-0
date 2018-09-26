@@ -1,7 +1,8 @@
 var x = 60;
+var y = 50;
 function setup (){
 // put setup code here
-  createCanvas(120,120);
+  createCanvas(800,220);
 }
 function draw(){
   background(0);
@@ -11,7 +12,15 @@ function draw(){
       x = x - 5;
     } else if(keyCode == RIGHT_ARROW) {
       x = x + 5;
+    }else if(keyCode == UP_ARROW){
+      y = y - 5;
+    }else if(keyCode == DOWN_ARROW){
+      y = y + 5;
+    }
+  if(key == 'd'){
+      line(x + 10, y, width, y);
+      stroke(225,255,0);
     }
   }
-  rect(x, 60, 10, 10);
+  rect(x, y, 10, 10);
 }
