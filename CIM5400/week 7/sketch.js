@@ -1,20 +1,20 @@
-var corgi;
-var behind;
-
-function preload(){
-  corgi = loadImage('corgi.jpg');
-  behind = loadImage('behind.jpg')
-}
-
-function setup(){
-  createCanvas(480, 240);
-}
-
-function draw(){
-  background(204);
-  image(corgi, mouseX, mouseY, 240, 120)
-  image(behind, 240, 120, 240, 120)
-}
+// var corgi;
+// var behind;
+//
+// function preload(){
+//   corgi = loadImage('corgi.jpg');
+//   behind = loadImage('behind.jpg')
+// }
+//
+// function setup(){
+//   createCanvas(480, 240);
+// }
+//
+// function draw(){
+//   background(204);
+//   image(corgi, mouseX, mouseY, 240, 120)
+//   image(behind, 240, 120, 240, 120)
+// }
 
 //
 // var bgImg;
